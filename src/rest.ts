@@ -71,6 +71,7 @@ export type RestMethod<Rest extends RestBase> = ValueOf<{
 }>;
 
 export type RestPathWMethod<Rest extends RestBase, TMethods extends HttpMethod> = {
+    // eslint-disable-next-line @typescript-eslint/ban-types
     [Path in keyof Rest]: Rest[Path] extends Record<TMethods, {}> ?
     Path :
     never;
@@ -85,6 +86,7 @@ export type TypedRequest<
     & { url: string; }
     &
     (unknown extends TParams["body"] ?
+        // eslint-disable-next-line @typescript-eslint/ban-types
         {} :
         { body: TParams["body"]; }
     )

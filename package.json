@@ -1,7 +1,7 @@
 {
     "name": "fun-ts-rest",
     "description": "REST API definition and usage based on functional TypeScript.",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": {
         "name": "Jonathan Philipps",
         "url": "https://github.com/jphilipps"
@@ -47,12 +47,14 @@
     },
     "dependencies": {
         "fp-ts": "^2.12.1",
-        "fun-ts-fetch": "^0.1.0"
+        "fun-ts-fetch": "^0.1.1"
     },
     "peerDependencies": {
-        "io-ts": "^2.2.16"
+        "io-ts": "^2.2.16",
+        "type-fest": "^3.6.0"
     },
     "devDependencies": {
+        "type-fest": "^3.6.0",
         "io-ts": "^2.2.16",
         "@types/express-serve-static-core": "^4.17.28",
         "@typescript-eslint/eslint-plugin": "5.53.0",
